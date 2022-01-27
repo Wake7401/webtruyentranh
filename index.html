@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Đọc truyện tranh online</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="./index.html" class="logo">
+                            <img src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="navbar-form navbar-left search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" placeholder="Tìm truyện...">
+                            <div class="input-group-btn">
+                                <input type="submit" value="" class="searchbutton btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notifications">
+                        <a href="#">
+                            <i class="fas fa-comment"></i>
+                        </a>
+                        <div class="overlay"></div>
+                        <div class="notification-popup">
+                            <h3>
+                                <a href="">Thông báo</a>
+                            </h3>
+                            <div class="notification-content">
+                                <p class="text-center">Vui lòng đăng nhập để sử dụng chức năng này</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-account pull-right list-inline hidden-xs">
+                    <li class="login-link">
+                        <a href="./login.html">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li class="register-link">
+                        <a href="./register.html">
+                            Đăng kí
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav hidden-xs">
+        <div class="inner">
+            <div class="container">
+                <ul class="nav navbar-nav main-menu">
+                    <li class="active">
+                        <a href="./index.html">
+                            <i class="fa fa-home hidden-xs">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                           HOT
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                           Theo dõi
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                           Lịch sử
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="">
+                           Thể loại
+                           <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu megamenu">
+                            <li>
+                                <div class="clearfix">
+                                    <div class="col-sm-6">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="">Tất cả</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Adventure</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Anime</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="">Tất cả</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Adventure</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Anime</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Xếp hạng
+                            <i class="fa fa-sort"></i>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown">
+                            <a href="">
+                                <i class="fa fa-eye">
+                            </i> Top all</a>
+                            <a href="">
+                                <strong>
+                            <i class="fa fa-signal">
+                            </i> Truyện full</strong>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-eye">
+                            </i> Top tháng</a>
+                            <a href="">
+                                <i class="fa fa-thumbs-o-up">
+                            </i> Yêu Thích</a>
+                            <a href="">
+                                <i class="fa fa-eye">
+                            </i> Top tuần</a>
+                            <a href="">
+                                <i class="fa fa fa-refresh">
+                                </i> Mới cập nhật</a>
+                            <a href="">
+                                <i class="fa fa-eye">
+                            </i> Top ngày</a>
+                            <a href="">
+                                <i class="fa fa-cloud-upload">
+                            </i> Truyện mới</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="top-comics">
+                <h2 class="page-title">Truyện đề cử <i class="fa fa-angle-right"></i></h2>
+                <div class="items-slide">
+                    <div class="owl-carousel clearfix owl-theme" style="opacity: 1; display:block;">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="./detail.html">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width:203px">
+                                    <div class="item">
+                                        <a href="">
+                                            <img class="lazyOwl" src="http://st.nettruyengo.com/data/comics/131/dai-vuong-tha-mang.jpg" alt="">
+                                        </a>
+                                        <div class="slide-caption">
+                                            <h3>
+                                                <a href="">Đại vương tha mạng</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-side col-md-8">
+                    <div class="items">
+                        <h1 class="page-title">
+                            Truyện mới cập nhật
+                            <i class="fa fa-angle-right"></i>
+                        </h1>
+                        <div class="row">
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="item">
+                                <figure class="clearfix">
+                                    <div class="image">
+                                        <a href="">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <figcaption>
+                                        <h3>
+                                            <a href="">
+                                                Tôi thăng cấp một mình
+                                            </a>
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-outter">
+                        <ul class="pagination">
+                            <li class="active">
+                                <a href="">1</a>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <a href="">4</a>
+                            </li>
+                            <li>
+                                <a href="">5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side col-md-4">
+                    <div class="box-tab box darkBox">
+                        <ul class="tab-nav clearfix">
+                            <li>
+                                <a href="" class="active">Top tháng</a>
+                            </li>
+                            <li>
+                                <a href="">Top Tuần</a>
+                            </li>
+                            <li>
+                                <a href="">Top ngày</a>
+                            </li>
+                        </ul>
+                        <div class="tab-pane">
+                            <ul class="list-unstyled">
+                                <li class="clearfix">
+                                    <span class="txt-rank top1">01</span>
+                                    <div class="t-item">
+                                        <a href="" class="thumb">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                        <h3 class="title">
+                                            <a href="">Tôi thăng cấp một mình</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="txt-rank top2">02</span>
+                                    <div class="t-item">
+                                        <a href="" class="thumb">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                        <h3 class="title">
+                                            <a href="">Tôi thăng cấp một mình</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="txt-rank top3">03</span>
+                                    <div class="t-item">
+                                        <a href="" class="thumb">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                        <h3 class="title">
+                                            <a href="">Tôi thăng cấp một mình</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="txt-rank top4">04</span>
+                                    <div class="t-item">
+                                        <a href="" class="thumb">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                        <h3 class="title">
+                                            <a href="">Tôi thăng cấp một mình</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="txt-rank top5">05</span>
+                                    <div class="t-item">
+                                        <a href="" class="thumb">
+                                            <img src="http://st.nettruyengo.com/data/comics/106/toi-thang-cap-mot-minh-2.jpg" alt="">
+                                        </a>
+                                        <h3 class="title">
+                                            <a href="">Tôi thăng cấp một mình</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 copyright">
+                    <a href="">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+
+                    <div class="mrt-10">
+                        <p>
+                            Copyright © 2021 Truyện tranh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a id="back-to-top" style="display: inline;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
