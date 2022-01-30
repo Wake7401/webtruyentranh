@@ -920,27 +920,6 @@ img {
     position: relative;
 }
 
-.shortened {
-    max-height: 60px;
-    overflow: hidden;
-}
-
-#item-detail .detail-content p.shortened:before {
-    position: absolute;
-    content: '';
-    display: block;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 20px;
-    background: linear-gradient(rgba(255, 255, 255, 0), #fff);
-}
-
-.morelink {
-    white-space: nowrap;
-    display: inline-block;
-}
-
 #item-detail .list-chapter nav ul {
     padding-left: 0;
     list-style: none;

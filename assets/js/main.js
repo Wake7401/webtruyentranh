@@ -1,8 +1,8 @@
 window.onscroll = function() { scroll() };
 const header = document.querySelector(".main-nav");
 const scrollFixed = header.offsetTop;
-const follow = document.querySelector(".follow-link")
-
+const follow = document.querySelector(".follow")
+const followLink = document.querySelector(".follow-link")
 
 // Carousel
 $('.owl-carousel').owlCarousel({
@@ -178,3 +178,11 @@ $(document).ready(function() {
         $('#count-existing').html(value);
     });
 });
+
+// follow
+
+follow.addEventListener('click', function(e) {
+    followLink.classList.add('btn-danger');
+    followLink.classList.remove('btn-success');
+    followLink.innerHTML = `<i class="fa fa-times"></i> Bỏ theo dõi`
+})
